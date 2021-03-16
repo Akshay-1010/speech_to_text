@@ -1,0 +1,3 @@
+#!/home/kamla/PycharmProjects/Voice_to_text/Voice_to_text/bin/python
+from numba.pycc import main
+main()
