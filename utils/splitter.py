@@ -46,6 +46,8 @@ def split_on_sil(path=None):
     for split in longer_splits:
 
         chunk_name = f'chunk{i}.wav'
-        chunk_path = f'{root_dir}/chunks/{chunk_name}'
+        #chunk_path = f'{root_dir}/chunks/{chunk_name}'
+        chunk_path = os.path.join(root_dir, 'chunks')
+        chunk_path = os.path.join(chunk_path, chunk_name)
         split.export(chunk_path, bitrate='192k', format="wav")
         i += 1
